@@ -1,0 +1,193 @@
+/* *{
+    box-sizing: border-box;
+} */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    overflow-y: scroll;
+    background: linear-gradient(57deg, black, gray);
+}
+
+.container {
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+    height: 200px;
+    background: url(image/building.jpg);
+    background-position: bottom;
+    background-size: cover;
+    padding-top: 90px;
+}
+
+.img1 {
+    width: 100%;
+    height: 200px;
+    background: url(image/night.jpg);
+    background-position: bottom;
+    background-size: cover;
+    padding-top: 90px;
+}
+
+.img2 {
+    width: 100%;
+    height: 200px;
+    background: url(image/statue.jpg);
+    background-position: bottom;
+    background-size: cover;
+    padding-top: 90px;
+}
+
+.heading {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    background-color: black;
+    width: 350px;
+    height: 85vh;
+    border: 1px solid none;
+    overflow-y: auto;
+}
+
+.todo {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 70%;
+    outline: none;
+}
+
+
+
+.li {
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: white;
+    list-style-type: decimal;
+}
+
+.val {
+    border: none;
+    border-bottom: 1px dotted orangered;
+    width: 50%;
+}
+
+.contant {
+    padding: 15px;
+    text-align: center;
+}
+
+.buttons {
+    outline-width: 0;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background: linear-gradient(57deg, black, gray);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons1 {
+    padding: 5px 50px;
+    border-radius: 15px;
+    background: linear-gradient(57deg, black, gray);
+    color: white;
+    border: 1px solid none;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn2 {
+    margin: 0.1em;
+    margin-left: .5em;
+    outline: none;
+    border: none;
+    background-color: black;
+    padding: 0;
+    cursor: pointer;
+
+}
+.fa-pencil{
+    font-size: 5px;
+}
+.btn1{
+    margin: 0.1em;
+    outline: 0;
+    border: none;
+    background-color: black;
+    padding: 0;
+    margin-left: .2em;
+    cursor: pointer;
+
+}
+.btn1:active,.btn2:active,.buttons:active,.buttons1:active{
+    outline: none;
+}
+.btn1:focus,.btn2:focus,.buttons:focus,.buttons1:focus{
+    outline: none;
+}
+.subli {
+    text-align: left;
+    color: white;
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    list-style: decimal;
+}
+/* ----------------------------media quiry */
+@media only screen and (max-width: 490px) {
+    .wrapper {
+        width: 95%;
+    }
+    .todo{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 435px) {
+    .wrapper {
+        width: 98%;
+    }
+    .todo{
+        width: 90%;
+    }
+    .buttons{
+        padding: 5px 30px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .wrapper {
+        width: 105%;
+        height: 400px;
+    }
+    .todo{
+        width: 100%;
+    }
+    .buttons{
+        padding: 5px 15px;
+    }
+}
+@media only screen and (max-width: 350px){
+    .wrapper{
+        width: 100%;
+        height: 300px;
+    }
+    .img,.img1,.img2{
+        height: 100px;
+        background-position: bottom;
+    }
+    
+    .heading{
+        font-size: 20px;
+    }
+}
